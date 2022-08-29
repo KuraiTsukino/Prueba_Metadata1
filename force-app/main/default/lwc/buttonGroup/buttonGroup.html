@@ -1,9 +1,22 @@
 <template>
-    <div id="Buttons">
-        <lightning-button-group>
-            <lightning-button label="Refresh"></lightning-button>
-            <lightning-button label="Edit"></lightning-button>
-            <lightning-button label="Save"></lightning-button>
-        </lightning-button-group>
+    <div class="slds-card">
+
+        <div class="slds-page-header">
+            Button Counter
+        </div>
+
+        <div id="Buttons">
+            <lightning-button-group>
+                <lightning-button label="Count + 1" variant="brand" onclick={counterUp}></lightning-button>
+                <lightning-button label="Count - 1" variant="destructive" onclick={counterDown} ></lightning-button>
+            </lightning-button-group>
+
+            <br>
+        </div>
+
+        <div class="slds-footer">
+            Count is: {count}.
+        </div>
+
     </div>
 </template>
